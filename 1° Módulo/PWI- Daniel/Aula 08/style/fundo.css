@@ -1,0 +1,13 @@
+body{
+    background-image: url(../img/Jujutsu.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+form{
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 7px;
+    height: 100px;
+    width: 10%;
+}
