@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Projecty_Game</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Cadastre-se</string>
+    <string name="gamer">Gamers</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="title_cadastro">Cadastre-se</string>
+</resources>
