@@ -1,0 +1,25 @@
+CREATE DATABASE dbPw3;
+
+
+
+use dbPw3;
+
+
+
+CREATE TABLE idLab (
+	idLab INT AUTO_INCREMENT PRIMARY KEY,
+	Lab int
+);
+
+
+
+CREATE TABLE IF NOT EXISTS tbReclamação (
+	idRec INT AUTO_INCREMENT PRIMARY KEY,
+	idLab INT,
+	pc INT,
+	título varchar(300),
+	descricao varchar(600),
+	dtCriacao DATE, 
+	FOREIGN KEY (idLab) REFERENCES tbLab(idLab)
+);
+
