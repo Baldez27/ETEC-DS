@@ -1,0 +1,45 @@
+
+
+body{
+   background: #bbebeb; 
+ 
+}
+
+h1{
+    text-align: center;
+    text-decoration: overline;
+    padding: 2em;
+}
+div ,img{
+    border-radius: 50px; 
+    height: 300px ;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;   
+}
+
+p{
+    font-size: 30px;
+    font-family: cursive;
+    padding: 5px; 
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+ul{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    
+    
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    height: 10em;
+}
+
+
+
+
