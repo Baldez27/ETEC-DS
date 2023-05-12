@@ -18,19 +18,9 @@
     <div class="container">
         <form  action="/contato" method="post">        
             {{csrf_field()}} 
-
-            
             <input  type="text" name="txNome" placeholder="Nome"/>
-        
-
-        
             <input  type="text" name="txTelefone" placeholder="Telefone" />
-        
-
-        
             <input  type="text" name="txEmail" placeholder="E-mail" /> 
-        
-
             <button type="submit" class="submitbtn">Salvar</button>
         </form>
     </div>
@@ -45,14 +35,14 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($contato as $c) 
+                @foreach($contatos as $c)  
                 <tr>
                     <td>{{$c->idContato}}</td>
                     <td>{{$c->Nome}}</td>
                     <td>{{$c->Tel}}</td>
                     <td>{{$c->Email}}</td>
                     <td><a class="excluir" href="/contato/excluir/{{$c->idContato}}"> 
-                        Excluir
+                        <button class="button_">Delete</button>
                         </a>
                     </td>
                 </tr>       
@@ -60,7 +50,5 @@
             </tbody>
     </table>
     
-
 </body>
-
 </html>

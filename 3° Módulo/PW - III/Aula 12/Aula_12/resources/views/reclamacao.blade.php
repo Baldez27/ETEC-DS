@@ -19,7 +19,7 @@
     <form  action="/reclamacao" method="post">        
         {{csrf_field()}}        
 
-        <select name="" id="">
+        <select name="lab" id="lab">
             @foreach($laboratorio as $l)
             <option value="{{$l -> idLab}}">{{$l -> Lab}}</option>
             @endforeach
@@ -27,6 +27,7 @@
         <input type="text" name="txPc" placeholder="Pc"/>
         <input type="text" name="txTitulo" placeholder="Título" />
         <input type="text" name="txDescricao" placeholder="Descrição" />
+        <input type="text" name="txdtCriacao " placeholder="Data Criação" />
         <button type="submit" class="submitbtn">Salvar</button>
     </form>
 </div>
@@ -37,6 +38,7 @@
             <th>Pc</th>
             <th>Title</th>
             <th>Desc</th>
+            <th>Data</th>
             <th>Control</th>
         </tr>
     </thead>
@@ -47,8 +49,9 @@
             <td>{{$c->PC}}</td>
             <td>{{$c->Titulo}}</td>
             <td>{{$c->Descricao}}</td>
+            <td>{{$c->dtCriacao}}</td>
             <td><a class="excluir" href="/reclamacao/excluir/{{$c->idRec}}"> 
-            <button class="button_">Detele</button>
+            <button class="button_">Delete</button>
                 </a>
             </td>
         </tr>       

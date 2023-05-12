@@ -12,17 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
 Route::get('/contato','ContatoController@index');
 Route::post('/contato','ContatoController@store');
 Route::get('/contato/excluir/{idContato}','ContatoController@destroy');
-
-Route::get('/reclamacao','reclamacaoController@index');
-Route::post('/reclamacao','reclamacaoController@store');
-Route::get('/reclamacao/excluir/{idRec}','reclamacaoController@destroy');
-
-Route::get('/laboratorio','LaboratorioController@index');
-Route::post('/laboratorio','LaboratorioController@store');
-Route::get('/laboratorio/excluir/{idLab}','LaboratorioController@destroy');

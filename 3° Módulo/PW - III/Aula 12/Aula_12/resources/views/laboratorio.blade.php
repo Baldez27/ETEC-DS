@@ -20,16 +20,22 @@
         <input type="text" name="txLab" placeholder="Lab"/>
         <button type="submit" class="submitbtn">Salvar</button>
     </form>
-</div>  
-    @foreach($laboratorios as $c)        
-        <p>
-        {{$c->idLab}}
-        {{$c->Lab}}
-        <a  class="excluir" href="/laboratorio/excluir/{{$c->idLab}}"> 
-            Excluir
-        </a>
-        </p>
-    @endforeach
+</div>
+
+<table>
+     <tbody>
+         @foreach($laboratorios as $c) 
+            <tr>
+                <td>{{$c->idLab}}</td>
+                    <td>{{$c->Lab}}</td>
+                    <td><a class="excluir" href="/laboratorio/excluir/{{$c->idLab}}"> 
+                    <button class="button_">Delete</button>
+                    </a>
+                </td>
+            </tr>       
+        @endforeach
+    </tbody>
+    </table>
     
 </body>
 

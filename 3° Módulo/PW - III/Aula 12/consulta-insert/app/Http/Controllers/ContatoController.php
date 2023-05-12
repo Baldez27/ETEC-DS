@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\reclamacao;
-use App\Laboratorio;
+use App\Contato;
 
-class reclamacaoController extends Controller
+class ContatoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,12 +14,10 @@ class reclamacaoController extends Controller
      */
     public function index()
     {
-        $reclamacao = reclamacao::all();
+        $contatos = Contato::all();
         //$contatos = Contato::where('email','=','maria@gmail.com')->get();
-
-        $laboratorio = laboratorio::all();
         
-        return view('reclamacao',compact('reclamacao', 'laboratorio'));
+        return view('contato',compact('contatos'));
 
         /*
         foreach($contatos as $c){
@@ -47,17 +44,16 @@ class reclamacaoController extends Controller
      */
     public function store(Request $request)
     {
-        $reclamacao = new reclamacao();
+        $contato = new Contato();
 
-        $reclamacao ->Pc = $request->txPc;        
-        $reclamacao->idLab = $request->lab;        
-        $reclamacao ->Titulo = $request->txTitulo;
-        $reclamacao ->Descricao = $request->txDescricao;
-        $reclamacao ->dtCriacao  = $request->txdtCriacao ;
+        $contato ->nome = $request->txNome;        
+        $contato ->email = $request->txEmail;
+        $contato ->assunto = $request->txAssunto;
+        $contato ->mensagem = $request->txMensagem;
 
-        $reclamacao->save();
+        $contato->save();
 
-        return redirect('/reclamacao');
+        return redirect('/contato');
     }
 
     /**
@@ -100,10 +96,10 @@ class reclamacaoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($idRec)
+    public function destroy($idContato)
     {
-        $reclamacao = new reclamacao();
-        $reclamacao->where('idRec','=',$idRec)->delete();
-        return redirect('/reclamacao');
+        $contato = new Contato();
+        $contato->where('idContato','=',$idContato)->delete();
+        return redirect('/contato');
     }
 }

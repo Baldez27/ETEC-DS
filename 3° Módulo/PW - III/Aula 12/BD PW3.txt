@@ -1,0 +1,67 @@
+CREATE DATABASE dbpw3;
+
+USE dbpw3;
+
+CREATE TABLE tbLab (
+	idLab INT PRIMARY KEY AUTO_INCREMENT,
+    Lab VARCHAR(250)
+);
+
+INSERT INTO tbLab VALUES (null, "Lab01");
+
+INSERT INTO tbLab VALUES (null, "Lab02");
+
+INSERT INTO tbLab VALUES (null, "Lab03");
+
+INSERT INTO tbLab VALUES (null, "Lab04");
+
+CREATE TABLE tbReclamacao (
+    idRec INT PRIMARY KEY AUTO_INCREMENT,
+	idLab INT,
+    PC VARCHAR(250),
+    Titulo VARCHAR(250),
+    Descricao VARCHAR(250),
+    dtCriacao DATE,
+    FOREIGN KEY (idLab) REFERENCES tblab(idLab)
+);
+
+INSERT INTO tbReclamacao VALUES (null, 1, 01, 'RJ45 quebrado', 'A ponta do RJ45 do PC 01 do Lab 1 está quebrada, precisa refazer a ponta', '2023-03-09');
+
+INSERT INTO tbReclamacao VALUES (null, 8, 04, 'Monitor quebrado', 'O monitor do PC 4 está com a tela rachada, necessita de troca', '2023-02-03');
+
+CREATE TABLE tbContato (
+	idContato INT PRIMARY KEY AUTO_INCREMENT,
+    Nome varchar(250),
+    Tel VARCHAR(250),
+    Email VARCHAR(250)
+);
+
+INSERT INTO tbContato VALUES (null, 'Daniel Baldez', '11971850165', 'danielbaldez2000@gmail.com');
+
+
+
+
+====================================================================================================
+
+Laravel == ORM - Mapeamento objeto relacional
+
+Larevel == MVC 
+
+- MODEL - Representação de Dados
+
+- VIEW - Interação com o Sistema
+
+- CONTROLLER - Controla a representação dos dados com a interação do sistema.
+
+
+Fazer todas as consultas de todas as tabelas do projeto
+
+Fazer a exibição dos dados de uma tabela com formatação
+
+
+
+=====================================================================================================
+
+
+
+
