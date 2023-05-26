@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #ffffff;
+	background-color: #42434d;
+	overflow-x: hidden;
+  	margin: 0;
+	  grid-gap: 3em;
+	height: 100vh;
+	background: 
+		repeating-linear-gradient(45deg, 
+				#333333 0 1em, #535353 0 2em);
+}
+
+
+form{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	padding: 100px;
+	margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: row wrap;
+}
+input[type=text], select {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+.container {
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.submitbtn{
+	background-color: #a6acac;;
+	color: rgb(14, 13, 13);
+	padding: 15px 20px;
+	margin: 10px 0px;
+	border: none;
+	cursor: pointer;
+	width: 100%; 
+}
+
+button{
+  font: 600 1.05rem/1 "Nunito", sans-serif;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+::placeholder {
+	color: rgb(104, 103, 103);
+	font-size: 10px;
+	text-transform: uppercase;
+  }
+
+  p {
+	margin: 0;
+	text-indent: 3ch;
+  background-color: rgba(217, 235, 241, 0.185);
+  }
+
+  
+  p.pilcrow {
+	text-indent: 0;
+	display: inline;
+  }
+  p.pilcrow + p.pilcrow::before {
+	content: " ¶ ";
+  }
+
+  table, th, td {
+	border: 1px solid black;
+	}
+	
+	table {
+	border-collapse: collapse;
+	margin: auto;
+	}
+	
+	th, td{
+	padding: 10px;
+	text-align: center;
+	width: 120px;
+	}
+	
+	th{
+	font-weight: bold;
+	}
+	
+	
+	tr:nth-child(even) {
+	background-color: #DCEBE6;
+	}
+	
+	tr:hover:nth-child(1n + 2) {
+	background-color: #808383;
+	color: #dfdcdc;
+	}
+	
+	button {
+		font-size: 18px;
+		padding: 8px;
+		text-transform: capitalize;
+		border-radius: 5px;
+		border: none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+	  }
+
+	  .button_ {
+		background: #f53f3f;
+		color: white;
+	  }
+	  
+	  .bottom {
+		border-bottom: 2px solid #94aca9;
+	  }

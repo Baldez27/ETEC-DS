@@ -1,0 +1,12 @@
+Atividade avaliativa 1
+
+Apresentar no primeiro bloco da próxima aula
+(25/05)
+
+Página principal
+Página de Laboratórios
+Página de Reclamação
+Rotinas de consulta, inserção e exclusão para as tabelas de laboratório e reclamação
+URL de API para inserção, consulta e exclusão
+Página com a utilização da página de CEP
+Página com um gráfico (pode ser estático)
