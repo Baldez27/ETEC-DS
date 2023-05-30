@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "625169101810",
+    "project_id": "capacitacao-49e12",
+    "storage_bucket": "capacitacao-49e12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625169101810:android:0f5a4622fb3baee243716b",
+        "android_client_info": {
+          "package_name": "com.example.bancoweb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625169101810-4hfi88spf49p2sgo4tu6vvnl5um7pv56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bancoweb",
+            "certificate_hash": "5a71e20a0d6efab2f40aaf22b38dd65d3d0a37fb"
+          }
+        },
+        {
+          "client_id": "625169101810-d63bogcn37adnps0odsivcj35nduuegt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKLcoCve3CJ6WHWmZZGNdAaomMz5PYeAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625169101810-d63bogcn37adnps0odsivcj35nduuegt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
