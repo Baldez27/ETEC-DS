@@ -1,0 +1,16 @@
+Controller
+public function update(Request $request, $id)
+{
+	Device::where('idDevice','=',$request->id)->update($request);
+	return redirect('/dispositivos');
+}
+
+
+web.php
+Route::post('/dispositivo/update/{id}','App\Http\Controllers\DeviceController@update');
+
+
+View
+<form role="form" class="text-start" action="/dispositivo/update/{{$device->idDevice}}" method="post">
+@csrf
+
