@@ -1,0 +1,92 @@
+/* Estilo da primeira seção - Apresentação */
+
+.main {
+    background-color: #006989;
+}
+
+.main-presentation {
+    margin: 0 4%;
+    display: flex;
+    align-items: center;
+    padding: 125px 0;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.main-svg {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.main-text h1,
+.main-text p {
+    color: #fff;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.main-text h1 {
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 45px;
+    font-size: 28px;
+    font-weight: 500;
+    width: 50%;
+}
+
+.main-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    width: 50%;
+    
+}
+
+/* Estilização da segunda seção - Matérias */
+
+.subjects-title {
+    text-align: center;
+}
+
+.subjects-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.subjects-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 125px 0;
+    margin: 0 8%;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject-image img {
+    filter: drop-shadow(0px 4px 4px #999);
+}
+
+.subject-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject-name h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.subject-name p {
+    font-family: "Montserrat", sans-serif;
+}

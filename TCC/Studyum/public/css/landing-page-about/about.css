@@ -1,0 +1,118 @@
+/* Estilo da primeira seção - Sobre */
+
+.about {
+    background-color: #006989;
+}
+
+.about-presentation {
+    margin: 0 4%;
+    display: flex;
+    align-items: center;
+    padding: 125px 0;
+}
+
+.about-svg {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.about-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #fff;
+    width: 50%;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilização da segunda seção - Desenvolvedores */
+
+.about-devs-title {
+    text-align: center;
+}
+
+.about-devs-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.about-devs-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 125px 0;
+    margin: 0 4%;
+}
+
+.about-devs-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.about-devs-image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.about-devs-text h3 {
+    font-family: "Raleaway", sans-serif;
+    font-size: 24px;
+    width: 50%;
+}
+
+.about-devs-text p {
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 3%;
+    width: 50%;
+}
+
+.dev-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 125px 0;
+    margin: 0 8%;
+}
+
+.dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dev-image {
+    display: flex;
+    justify-content: center;
+}
+
+.dev-image img {
+    filter: drop-shadow(0px 4px 4px #999);
+    width: 60%;
+    border-radius: 50%;
+}
+
+.dev-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dev-name h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.dev-name p {
+    font-family: "Montserrat", sans-serif;
+}
